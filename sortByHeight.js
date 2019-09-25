@@ -8,7 +8,7 @@ function sortByHeight(a) {
 
   const sortArr = values.sort((a, b) => a - b);
 
-  negOnePos.forEach((val, index) => sortArr.splice(negOnePos[index], 0, -1));
+  negOnePos.forEach((val, index) => sortArr.splice(val, 0, -1));
 
   return sortArr;
 }
